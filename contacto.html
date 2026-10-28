@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📞 Contacto — Impulso Fitness Center</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; background-size: cover; color: white; line-height: 1.6; }
+        .fondo-transparente { background: rgba(0, 0, 0, 0.75); min-height: 100vh; }
+        header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 20px 40px; border-bottom: 2px solid #ff3333; background: rgba(0, 0, 0, 0.5); gap: 20px; }
+        .logo-contenedor { display: flex; align-items: center; gap: 20px; }
+        .logo { width: 90px; height: 90px; border-radius: 10px; background: white; padding: 5px; box-shadow: 0 4px 15px rgba(255, 51, 51, 0.4); }
+        .logo-texto h1 { font-size: 2.2rem; color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); letter-spacing: 1px; line-height: 1.2; }
+        .logo-texto span { font-size: 1.3rem; color: #ffffff; font-weight: 400; }
+        .eslogan { font-size: 1.25rem; color: #ffcc00; font-style: italic; font-weight: 700; text-align: right; max-width: 320px; line-height: 1.5; border-left: 3px solid #ff3333; padding-left: 20px; text-shadow: 1px 1px 5px rgba(0,0,0,0.7); }
+        nav { display: flex; justify-content: center; gap: 30px; padding: 20px; background: rgba(255, 51, 51, 0.2); flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-size: 1.2rem; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: all 0.3s ease; }
+        nav a:hover, nav a.activo { background: #ff3333; color: #ffcc00; transform: scale(1.1); }
+        main { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        section { margin-bottom: 50px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(5px); border-left: 5px solid #ff3333; }
+        h2 { color: #ffcc00; font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid #ff3333; padding-bottom: 10px; }
+        form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin-top: 20px; }
+        input, textarea { padding: 12px; border: none; border-radius: 8px; font-size: 1rem; background: rgba(255,255,255,0.9); color: #222; }
+        button { padding: 15px; background: linear-gradient(90deg, #ff3333, #ff6600); color: white; border: none; border-radius: 8px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: transform 0.3s; }
+        button:hover { transform: scale(1.05); }
+        .info-contacto { margin-top: 20px; line-height: 2; }
+        footer { text-align: center; padding: 30px; background: rgba(0,0,0,0.8); color: #aaa; border-top: 2px solid #ff3333; }
+        .redes { margin-top: 15px; }
+        .redes a { color: #ffcc00; margin: 0 10px; text-decoration: none; font-size: 1.1rem; }
+        @media (max-width: 768px) { header { flex-direction: column; text-align: center; } .eslogan { text-align: center; border-left: none; border-top: 3px solid #ff3333; padding-left: 0; padding-top: 15px; } .logo-contenedor { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+    <div class="fondo-transparente">
+        <header>
+            <div class="logo-contenedor">
+                <img src="Impulso.jpeg" alt="Impulso Fitness Center" class="logo">
+                <div class="logo-texto"><h1>Impulso <span>Fitness Center</span></h1></div>
+            </div>
+            <div class="eslogan">"Activa tu fuerza,<br>Transforma tu vida."</div>
+        </header>
+
+        <nav>
+            <a href="index.html">🏠 Inicio</a>
+            <a href="servicios.html">💪 Servicios</a>
+            <a href="horarios.html">🕐 Horarios</a>
+            <a href="catalogo.html">📄 Catálogo PDF</a>
+            <a href="contacto.html" class="activo">📞 Contacto</a>
+        </nav>
+
+        <main>
+            <section>
+                <h2>📞 Contáctanos</h2>
+                <p>¿Tienes dudas? ¿Quieres conocer más sobre nuestros planes? ¡Escríbenos y te responderemos de inmediato!</p>
+                
+                <form>
+                    <input type="text" placeholder="Tu Nombre Completo" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <input type="tel" placeholder="Tu Teléfono">
+                    <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">✅ Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>📍 Ubicación e Información</h2>
+                <div class="info-contacto">
+                    <p><strong>🏢 Dirección:</strong> Lerdo de Tejada #63, Col. Centro, Tuxpan, Veracruz</p>
+                    <p><strong>📞 Teléfono:</strong> (783) 145-0840</p>
+                    <p><strong>✉️ Correo electrónico:</strong> contacto@impulsofitness.com.mx</p>
+                    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/527831450840" target="_blank" style="color:#ffcc00; text-decoration:none;">+52 783 145 0840</a></p>
+                    <p><strong>🗺️ Ver en Google Maps:</strong> <a href="https://goo.gl/maps/NyGZHC7enurrRQV8A" target="_blank" style="color:#ffcc00; text-decoration:none;">Abrir ubicación</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Impulso Fitness Center — Todos los derechos reservados</p>
+            <p style="color: #ffcc00; font-weight: bold; margin-top: 5px;">"Activa tu fuerza, Transforma tu vida."</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/people/Gymnasio-Impulso/pfbid0KNrLsQ6yPpYTxr3aMFY4vM6F9vzRp5mmUfX6BFghRMWFQ49yFor6qVh9QSz1KJydl/" target="_blank">📘 Facebook</a>
+                <a href="https://www.instagram.com/gymnasio_impulso" target="_blank">📸 Instagram</a>
+                <a href="https://www.threads.com/@gymnasio_impulso?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">📸 Threads</a>
+                <a href="https://wa.me/527831450840" target="_blank">💬 WhatsApp</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
